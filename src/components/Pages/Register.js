@@ -7,6 +7,7 @@ import Col from '../Basic/Col';
 import Link from '../Basic/Link';
 import RegisterBlock from '../Basic/RegisterBlock';
 import LoginBlock from '../Basic/LoginBlock';
+import TitleH1 from '../Basic/TitleH1';
 
 
 export default class Register extends React.Component {

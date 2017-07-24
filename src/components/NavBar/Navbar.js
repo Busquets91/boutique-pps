@@ -34,7 +34,7 @@ export default class NavBar extends React.Component {
 					</NavBarMenu>
 					<NavBarButton>
 						<div className="navbar-collapse collapse right" id="basket-overview">
-							<Link href="/card" className="btn btn-primary navbar-btn">
+							<Link href="/cart" className="btn btn-primary navbar-btn">
 								<Icon className="fa fa-shopping-cart" />
 								<HiddenSM>
 									2 articles
