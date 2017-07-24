@@ -6,6 +6,7 @@ import Image from '../Basic/Image';
 import Paragraph from '../Basic/Paragraph';
 import TitleH3 from '../Basic/TitleH3';
 import Ribbon from '../Basic/Ribbon';
+import Icon from '../Basic/Icon';
 
 
 
@@ -31,7 +32,7 @@ export default class Item extends React.Component {
 
 
 		return (
-			<div className="item">
+			<div className={this.props.className} >
 				<div className="product">
 					<div className="flip-container">
 						<div className="flipper">
@@ -57,6 +58,12 @@ export default class Item extends React.Component {
 							</Link>
 						</TitleH3>
 						{price}
+						{this.props.haveBtn ?
+							<Paragraph className="buttons">
+								<Link href={this.props.itemhref} className="btn btn-default">Voir détails</Link>&nbsp;
+								<Link href="#" className="btn btn-primary"><Icon className="fa fa-shopping-cart"/>Ajouter</Link>
+							</Paragraph>
+							: null}
 					</div>
 					{ribbons.map((item) => 
 						<Ribbon key={item.id} type={item.type}/>

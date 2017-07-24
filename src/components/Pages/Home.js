@@ -6,7 +6,6 @@ import Col from '../Basic/Col';
 import Slider from '../Basic/Slider';
 import Cards from '../Basic/Cards';
 import Items from '../Basic/Items';
-import { Link } from 'react-router-dom';
 
 
 export default class Home extends React.Component {

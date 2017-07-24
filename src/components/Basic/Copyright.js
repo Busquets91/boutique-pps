@@ -4,7 +4,6 @@
 import Col from '../Basic/Col';
 import Paragraph from '../Basic/Paragraph';
 import Container from '../Basic/Container';
-import { Link } from 'react-router-dom';
 
 
 export default class Copyright extends React.Component {

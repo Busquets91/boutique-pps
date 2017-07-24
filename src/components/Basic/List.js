@@ -1,5 +1,4 @@
 ﻿import React from 'react';
-import Link from '../Basic/Link';
 
 export default class List extends React.Component {
 

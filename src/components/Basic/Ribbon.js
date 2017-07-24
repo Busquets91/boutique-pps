@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 
-export default class TitleH3 extends React.Component {
+export default class Ribbon extends React.Component {
 	render() {
 		const nameClass = "ribbon " + this.props.type;
 		var txt = "";

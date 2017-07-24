@@ -7,7 +7,6 @@ import Input from '../Basic/Input';
 import Button from '../Basic/Button';
 import Icon from '../Basic/Icon';
 import Form from '../Basic/Form';
-import Link from '../Basic/Link';
 
 export default class RegisterBlock extends React.Component {
 	render() {

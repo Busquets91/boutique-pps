@@ -21,7 +21,7 @@ export default class Items extends React.Component {
 				<Container>
 					<div className="product-slider">
 						{this.props.listItem.map((item) =>
-							<Item key={item.id} item={item}/>
+							<Item key={item.id} item={item} className="item" />
 						)}
 					</div>
 				</Container>
