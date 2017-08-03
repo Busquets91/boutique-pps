@@ -3,7 +3,7 @@ import React from 'react';
 import Image from '../Basic/Image';
 import Input from '../Basic/Input';
 import Link from '../Basic/Link';
-import I from '../Basic/I';
+import Icon from '../Basic/Icon';
 
 export default class CartItem extends React.Component {
 	render() {
@@ -15,7 +15,7 @@ export default class CartItem extends React.Component {
 				<td>{this.props.price}</td>
 				<td>{this.props.sale}</td>
 				<td>{this.props.finalPrice}</td>
-				<td><Link href="#"><I className="fa fa-trash-o"></I></Link></td>
+				<td><Link href="#"><Icon className="fa fa-trash-o"/></Link></td>
 			</tr>
 		);
 	}

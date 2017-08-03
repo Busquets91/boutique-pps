@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 
-import TitleH1 from '../Basic/TitleH1';
+import Title from '../Basic/Title';
 import Paragraph from '../Basic/Paragraph';
 import FormGroup from '../Form/FormGroup';
 import Input from '../Basic/Input';
@@ -13,9 +13,9 @@ export default class RegisterBlock extends React.Component {
 	render() {
 		return (
 			<div className="box">
-				<TitleH1>
+				<Title level={1}>
 					Nouveau compte
-				</TitleH1>
+				</Title>
 				<Paragraph className="lead">
 					Pas encore inscrit?
 				</Paragraph>

@@ -6,9 +6,18 @@ import ScreenReader from '../Basic/ScreenReader';
 import NavBarButton from '../NavBar/NavBarButton';
 import Button from '../Basic/Button';
 import Icon from '../Basic/Icon';
-import HiddenXS from '../Basic/HiddenXS';
+import Hidden from '../Basic/Hidden';
 
+/**
+ * General description:
+ * NavBarHeader is specific component that represent the header of the navbar
+ */
 export default class NavBarHeader extends React.Component {
+	constructor(props) {
+		super(props);
+		this.hiddenType = ["sm"];
+	}
+
 	render() {
 		return (
 			<div>
@@ -28,9 +37,9 @@ export default class NavBarHeader extends React.Component {
 					</Button>
 					<Link className="btn btn-default navbar-toggle" href="/card">
 						<Icon className="fa fa-shopping-cart" />
-						<HiddenXS>
+						<Hidden types={this.hiddenType}>
 							2 articles
-						</HiddenXS>
+						</Hidden>
 					</Link>
 				</NavBarButton>
 			</div>

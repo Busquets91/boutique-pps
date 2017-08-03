@@ -7,6 +7,10 @@ import SpanInputGroup from '../Form/SpanInputGroup';
 import Button from '../Basic/Button';
 import Icon from '../Basic/Icon';
 
+/**
+ * General description:
+ * SearchComponent is a specific component that redner a bar to do a search
+ */
 export default class SearchComponent extends React.Component {
 	render() {
 		return (

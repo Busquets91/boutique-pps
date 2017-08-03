@@ -5,27 +5,33 @@ import Row from '../Basic/Row';
 import Col from '../Basic/Col';
 import Image from '../Basic/Image';
 import Ribbon from '../Basic/Ribbon';
-import TitleH1 from '../Basic/TitleH1';
+import Title from '../Basic/Title';
 import Paragraph from '../Basic/Paragraph';
 import Link from '../Basic/Link';
 import Icon from '../Basic/Icon';
 
 export default class ImageItem extends React.Component {
+	constructor(props) {
+		super(props);
+		this.colClassSM = [{ type: "sm", size: 6 }];
+		this.colClassXS = [{ type: "xs", size: 4 }];
+	}
+
 	render() {
 		return (
 				<Row id="productMain">
-					<Col type="sm" size="6">
+					<Col args={this.colClassSM}>
 						<div id="mainImage">
 							<Image src="/img/detailsquare.jpg" alt="" className="img-responsive" />
 						</div>
 						<Ribbon type="sale" />
 						<Ribbon type="new" />
 					</Col>
-					<Col type="sm" size="6">
+					<Col args={this.colClassSM}>
 						<Box>
-							<TitleH1 className="text-center">
+							<Title level={1} className="text-center">
 								Sweat PPS
-							</TitleH1>
+							</Title>
 							<Paragraph className="goToDescription">
 								<Link href="#details" className="scroll-to">
 									Aller au détail du produit
@@ -39,17 +45,17 @@ export default class ImageItem extends React.Component {
 							</Paragraph>
 						</Box>
 						<Row id="thumbs">
-							<Col type="xs" size="4">
+							<Col args={this.colClassXS}>
 								<Link href="/img/detailsquare.jpg" className="thumb">
 									<Image src="/img/detailsquare.jpg" alt="" className="img-responsive" />
 								</Link>
 							</Col>
-							<Col type="xs" size="4">
+							<Col args={this.colClassXS}>
 								<Link href="/img/detailsquare2.jpg" class="thumb">
 								<Image src="/img/detailsquare2.jpg" alt="" className="img-responsive" />
 								</Link>
 							</Col>
-							<Col type="xs" size="4">
+							<Col args={this.colClassXS}>
 								<Link href="/img/detailsquare3.jpg" class="thumb">
 								<Image src="/img/detailsquare3.jpg" alt="" className="img-responsive" />
 								</Link>

@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import PropTypes from 'prop-types';
 
 import ModalLogin from '../Modal/ModalLogin';
 import Container from '../Basic/Container';
@@ -9,36 +10,36 @@ import List from '../Basic/List';
 import Link from '../Basic/Link';
 import Icon from '../Basic/Icon';
 import Button from '../Basic/Button';
-import HiddenSM from '../Basic/HiddenSM';
+import Hidden from '../Basic/Hidden';
 import OnlySR from '../Basic/OnlySR';
 import SearchComponent from '../NavBar/SearchComponent';
 
-
+/**
+ * General description:
+ * NavBar is a component that render a Navbar with a given list of link
+ */
 export default class NavBar extends React.Component {
-	render() {
-		const itemMenu = [
-			{ id: 1, className:"active" , object: <Link href="/" className="active">Accueil</Link> },
-			{ id: 2, object: <Link href="/shop">Catalogue</Link> },
-			{ id: 3, object: <Link href="/info">Infos</Link> },
-			{ id: 4, object: <Link href="#" dataToggle="modal" dataTarget="#login-modal">Connexion</Link> },
-			{ id: 5, object: <Link href="/register">Inscription</Link> }
-		];
+	constructor(props) {
+		super(props);
+		this.hiddenType = ["sm"];
+	}
 
+	render() {
 		return (
 			<div className="navbar navbar-default yamm" role="navigation" id="navbar">
 				<ModalLogin />
 				<Container>
 					<NavBarHeader/>
 					<NavBarMenu>
-						<List className="nav navbar-nav navbar-left" list={itemMenu} />
+						<List className="nav navbar-nav navbar-left" list={this.props.itemMenu} />
 					</NavBarMenu>
 					<NavBarButton>
 						<div className="navbar-collapse collapse right" id="basket-overview">
 							<Link href="/cart" className="btn btn-primary navbar-btn">
 								<Icon className="fa fa-shopping-cart" />
-								<HiddenSM>
+								<Hidden types={this.hiddenType}>
 									2 articles
-								</HiddenSM>
+								</Hidden>
 							</Link>
 						</div>
 						<div className="navbar-collapse collapse right" id="search-not-mobile">
@@ -55,4 +56,18 @@ export default class NavBar extends React.Component {
 			</div>
             );
 	}
+}
+
+NavBar.propTypes = {
+	/**
+	* lisItem: list of item that are part of the nav
+	* id is the key
+	* object is the item
+	* className is the class
+	*/
+	maint: PropTypes.arrayOf(PropTypes.shape({
+		id: PropTypes.number,
+		object: PropTypes.string,
+		className: PropTypes.string
+	}))
 }

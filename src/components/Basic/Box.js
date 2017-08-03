@@ -1,5 +1,10 @@
 ﻿import React from 'react';
+import PropTypes from 'prop-types';
 
+/**
+ * General description:
+ * Box is a simple element that render a div with the class "box"
+ */
 export default class Box extends React.Component {
 	render() {
 		return (
@@ -8,4 +13,11 @@ export default class Box extends React.Component {
 			</div>
 		);
 	}
+}
+
+Box.propTypes = {
+	/**
+	* id: id of the element
+	*/
+	id: PropTypes.string
 }

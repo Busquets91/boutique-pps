@@ -1,37 +1,77 @@
 ﻿import React from 'react';
+import PropTypes from 'prop-types';
 
 import Box from '../Basic/Box';
-import TitleH4 from '../Basic/TitleH4';
+import Title from '../Basic/Title';
 import Paragraph from '../Basic/Paragraph';
 import List from '../Basic/List';
 import Quote from '../Basic/Quote';
 
+
+/**
+ * General description:
+ * Descitem is a component that is generating the description of an item from the shop
+ */
 export default class Descitem extends React.Component {
-	render() {
-		const entretien = [{ id: 1, object: "55% Cotton, 45% Polyester" },
+	constructor(props) {
+		super(props);
+
+		this.entretien = [{ id: 1, object: "55% Cotton, 45% Polyester" },
 			{ id: 2, object: "Laver à froid, seulement avec les couleurs" }];
 
-		const taille = [{ id: 1, object: "Coupe regular" }];
+		this.taille = [{ id: 1, object: "Coupe regular" }];
+	}
+
+	render() {
 		return (
 			<Box id="details">
-				<TitleH4>
-					Description de l'article
-				</TitleH4>
+				<Title level={4}>
+					{this.props.title}
+				</Title>
 				<Paragraph>
-					Un sweat-shirt confortable, passe-partout avec un tissu en étoffe supersoft, manches raglan, capuche avec cordons, icône à la poitrine gauche et garniture à nervures
+					{this.props.desc}
 				</Paragraph>
-				<TitleH4>
+				<Title level={4}>
 					Matériaux et entretien
-				</TitleH4>
-				<List list={entretien}/>
-				<TitleH4>
+				</Title>
+				<List list={this.props.maint}/>
+				<Title level={4}>
 					Taille &Aacute; Coupe
-				</TitleH4>
-				<List list={taille} />
+				</Title>
+				<List list={this.props.size} />
 				<Quote>
-					Great sweat shirt to wear on chilly summer nights. Very comfy too. Yes, I would recommend this product.
+					{this.props.quote}
 				</Quote>
 			</Box>
 		);
 	}
+}
+
+Descitem.propTypes = {
+	/**
+	* desc: Description of the item
+	*/
+	desc: PropTypes.string,
+	/**
+	* quote: Quote from a customer
+	*/
+	quote: PropTypes.string,
+	/**
+	* maint: Array of way to maintain the item
+	* id is the key
+	* object is the text
+	*/
+	maint: PropTypes.arrayOf(PropTypes.shape({
+		id: PropTypes.number,
+		object: PropTypes.string
+	})),
+	/**
+	* size:Array of the different size avaiable
+	* id is the key
+	* object is the size
+	*/
+	size: PropTypes.arrayOf(PropTypes.shape({
+		id: PropTypes.number,
+		object: PropTypes.string
+	}))
 }

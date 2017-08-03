@@ -1,5 +1,11 @@
 ﻿import React from 'react';
+import PropTypes from 'prop-types';
 
+
+/**
+ * General description:
+ * Generate a Paragraph ellement <p>
+ */
 export default class Paragraph extends React.Component {
 	render() {
 		return (
@@ -8,4 +14,15 @@ export default class Paragraph extends React.Component {
 			</p>
 		);
 	}
+}
+
+Paragraph.propTypes = {
+	/**
+	* className: Class of the paragraph
+	*/
+	className: PropTypes.string,
+	/**
+	* id: id of the paragraph
+	*/
+	id: PropTypes.string
 }
