@@ -14,12 +14,12 @@ import Icon from '../Basic/Icon';
 export default class SearchComponent extends React.Component {
 	render() {
 		return (
-			<div className="clearfix collapse in" id="search" style={{ height: 'auto' }}>
+			<div className="clearfix collapse" id="search" >
 				<Form className="navbar-form" role="search">
 					<InputGroup>
 						<Input type="text" className="form-control" placeholder="Rechercher" />
 						<SpanInputGroup>
-							<Button type="submit" className="btn btn-primary">
+							<Button type="submit" className="btn btn-primary" dataToggle="collapse" dataTarget="#search">
 								<Icon className="fa fa-search" />
 							</Button>
 						</SpanInputGroup>

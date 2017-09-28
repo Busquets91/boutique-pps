@@ -15,11 +15,6 @@ import Quote from '../Basic/Quote';
 export default class Descitem extends React.Component {
 	constructor(props) {
 		super(props);
-
-		this.entretien = [{ id: 1, object: "55% Cotton, 45% Polyester" },
-			{ id: 2, object: "Laver à froid, seulement avec les couleurs" }];
-
-		this.taille = [{ id: 1, object: "Coupe regular" }];
 	}
 
 	render() {

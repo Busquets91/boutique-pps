@@ -19,7 +19,7 @@ export default class RegisterBlock extends React.Component {
 					Déja inscrit ?
 				</Paragraph>
 				<Paragraph className="text-muted">
-					Connectez vous dés maintenant a l'aide de vos identifiants afin de profitez des derniers articles de la Boutique !
+					Connectez-vous dès maintenant à l'aide de vos identifiants afin de profiter des derniers articles de la Boutique !
 				</Paragraph>
 				<hr />
 				<Form action="#">

@@ -43,7 +43,7 @@ export default class NavBar extends React.Component {
 							</Link>
 						</div>
 						<div className="navbar-collapse collapse right" id="search-not-mobile">
-							<Button type="button" className="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
+							<Button type="button" className="btn navbar-btn btn-primary" dataToggle="collapse" dataTarget="#search">
 								<OnlySR>
 									Toggle search
 								</OnlySR>

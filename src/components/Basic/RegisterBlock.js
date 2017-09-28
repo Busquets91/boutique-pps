@@ -20,7 +20,7 @@ export default class RegisterBlock extends React.Component {
 					Pas encore inscrit?
 				</Paragraph>
 				<Paragraph>
-					En vous inscrivant sur le site de la Boutique de Paris-Sud vous accéder à touts les produits dérivées de votre école préféré. Profitez de réduction en adhérant au BIPS!
+					En vous inscrivant sur le site de la Boutique de Paris-Sud vous accédez à tous les produits dérivés de votre école préférée. Profitez de réductions en adhérant au BIPS!
 				</Paragraph>
 				<Paragraph className="text-muted">
 					Pour plus d'informations, <Link href="#">contactez nous</Link>, nos respos boutique se feront un plaisir de vous répondre dans les plus brefs délais.

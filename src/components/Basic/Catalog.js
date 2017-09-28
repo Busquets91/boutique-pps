@@ -49,6 +49,7 @@ Catalog.propTypes = {
 	*	oldPrice: old price when sale
 	*	sale: is a sale
 	*	new: is new
+	*	href: link to page
 	*/
 	listItem: PropTypes.arrayOf(PropTypes.shape({
 		id: PropTypes.number,

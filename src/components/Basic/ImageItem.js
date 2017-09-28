@@ -41,7 +41,7 @@ export default class ImageItem extends React.Component {
 								50.00€
 							</Paragraph>
 							<Paragraph className="text-center buttons">
-								<Link href="basket.html" class="btn btn-primary"><Icon className="fa fa-shopping-cart" /> Ajouter au panier</Link>
+								<Link href="basket.html" className="btn btn-primary"><Icon className="fa fa-shopping-cart" /> Ajouter au panier</Link>
 							</Paragraph>
 						</Box>
 						<Row id="thumbs">

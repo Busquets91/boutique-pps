@@ -37,12 +37,12 @@ export default class Item extends React.Component {
 					<div className="flip-container">
 						<div className="flipper">
 							<div className="front">
-								<Link href={this.props.itemhref}>
+								<Link href="/item/5">
 									<Image src={this.props.item.src_front} alt={this.props.item.name} className="img-responsive"/>
                                 </Link>
                             </div>
 							<div className="back">
-								<Link href={this.props.item.href}>
+								<Link href="/item/5">
 									<Image src={this.props.item.src_back} alt={this.props.item.name} className="img-responsive"/>
 								</Link>
 							</div>

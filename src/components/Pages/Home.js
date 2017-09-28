@@ -20,8 +20,8 @@ export default class Home extends React.Component {
 
 		const { location } = this.props;
 
-		this.images = [{ id: 1, src: "img/main-slider1.jpg", alt: "" },
-		{ id: 2, src: "img/main-slider2.jpg", alt: "" },
+		this.images = [{ id: 1, src: "img/main-slider2.jpg", alt: "" },
+		{ id: 2, src: "img/main-slider1.jpg", alt: "" },
 		{ id: 3, src: "img/main-slider3.jpg", alt: "" },
 		{ id: 4, src: "img/main-slider4.jpg", alt: "" }];
 

@@ -24,13 +24,15 @@ export default class Detail extends React.Component {
 		this.entretien = [{ id: 1, object: "55% Cotton, 45% Polyester" },
 		{ id: 2, object: "Laver à froid, seulement avec les couleurs" }];
 
-		this.taille = [{ id: 1, object: "Coupe regular" }];
+		this.size = [{ id: 1, object: "Coupe regular" }];
 
 		this.title = "Super sweat whou";
 
 		this.desc = "SUper lmoqsc sdjnjds jdsjs lq kjsdhds a dsfij z dsjk sddc ,k,csd ijsfpdkfjlsdjfmsdjfsjdfmojkd dkfjslmdfdmjfpmd";
 
 		this.colClass = [{ type: "md", size: 126 }];
+
+		this.quote = "Vraiment super ce pull. Depuis que je l'ai, j'arrête pas de pécho !";
 
 		this.itemMenu = [
 			{ id: 1, className: (location.pathname === "/" ? "active" : ""), object: <Link href="/" className="active">Accueil</Link> },
@@ -50,7 +52,7 @@ export default class Detail extends React.Component {
 						<Tree path={this.path} />
 						<Col args={this.colClass}>
 							<ImageItem />
-							<DescItem size={this.size} maint={this.entretien} title={this.title} desc={this.desc} />
+							<DescItem size={this.size} maint={this.entretien} title={this.title} desc={this.desc} quote={this.quote} />
 						</Col>
 					</Container>
 				</Content>

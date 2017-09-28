@@ -18,14 +18,14 @@ export default class Shop extends React.Component {
 
 		const { location } = this.props;
 
-		this.items = [{ id: 1, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: "17" },
-		{ id: 2, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: "17", oldPrice: "22", sale: "1" },
-		{ id: 3, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: "17", new: "1" },
-		{ id: 4, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: "17" },
-		{ id: 5, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: "17" },
-		{ id: 6, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: "17" },
-		{ id: 7, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: "17" },
-		{ id: 8, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: "17", href: "item/id" }];
+		this.items = [{ id: 1, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: 17 },
+		{ id: 2, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: 17, oldPrice: 22, sale: true },
+		{ id: 3, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: 17, new: true },
+		{ id: 4, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: 17 },
+		{ id: 5, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: 17 },
+		{ id: 6, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: 17 },
+		{ id: 7, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: 17 },
+		{ id: 8, src_front: "/img/product1.jpg", src_back: "/img/product1_2.jpg", name: "Super déguisement toilettes", price: 17, href: "item/id" }];
 
 
 		this.filters = [{ id: 1, title: "Type", values: [{ id: 1, title: "T-shirt" }, { id: 2, title: "Sweat" }, { id: 3, title: "Jogging" }] },

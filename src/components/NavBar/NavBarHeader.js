@@ -22,16 +22,16 @@ export default class NavBarHeader extends React.Component {
 		return (
 			<div>
 				<Link className="navbar-brand home" href="/">
-					<Image src="img/logo.png" alt="Obaju logo" className="hidden-xs" />
-					<Image src="img/logo-small.png" alt="Obaju logo" className="visible-xs" />
+					<Image src="/img/logo.png" alt="PPS logo" className="hidden-xs" />
+					<Image src="/img/logo-small.png" alt="PPS logo" className="visible-xs" />
 					<ScreenReader text="La Boutique - Accueil"/>
 				</Link>
 				<NavBarButton>
-					<Button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+					<Button type="button" className="navbar-toggle" dataToggle="collapse" dataTarget="#navigation">
 						<ScreenReader text="Toggle navigation"/>
 						<Icon className="fa fa-align-justify" />
 					</Button>
-					<Button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#search">
+					<Button type="button" className="navbar-toggle" dataToggle="collapse" dataTarget="#search">
 						<ScreenReader text="Toggle search" />
 						<Icon className="fa fa-search" />
 					</Button>
